@@ -32,7 +32,7 @@ export default function AnalysisPanel({ ticker, horizon }) {
   return (
     <div className="card analysis-panel">
       <div className="analysis-header">
-        <span className="analysis-title">{data.demo_snapshot ? "Snapshot analysis" : "Analysis"}</span>
+        <span className="analysis-title">{data?.demo_snapshot ? "Snapshot analysis" : "Analysis"}</span>
         {data && (
           <span className="analysis-badge" style={{ color: directionColor }}>
             {directionArrow} {data.prediction} · {data.confidence}% confidence
