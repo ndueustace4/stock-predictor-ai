@@ -21,3 +21,5 @@ files after its snapshot has been generated.
 
 Do not commit `.env` files, database connection strings, API keys, or private
 model/data artifacts.
+
+This static portfolio preview is deployed from the portfolio-preview branch.
