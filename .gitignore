@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# ML models — too large for git, deploy separately
+ml/models/*.pkl
+
+# FNSPID large datasets — do not commit
+ml/fnspid_models/
+ml/fnspid_prices/
+ml/fnspid_raw/
+ml/fnspid_filtered.csv
+
+# Large data files
+data/analyst_ratings_processed.csv
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env
+
+# Jupyter / editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
+
+.vercel
+.env*

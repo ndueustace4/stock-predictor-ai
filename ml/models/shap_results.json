@@ -1,0 +1,117 @@
+{
+  "no_sentiment": {
+    "ticker": "AAPL",
+    "global_importance": {
+      "price_lag1": 0.06210563704371452,
+      "volatility_7": 0.05945907160639763,
+      "momentum_5": 0.051868826150894165,
+      "ma_20": 0.04797918349504471,
+      "ma_10": 0.044889479875564575,
+      "volume": 0.037597235292196274,
+      "close": 0.02896585874259472,
+      "ma_5": 0.020040292292833328,
+      "price_lag2": 0.017958104610443115
+    },
+    "latest_explanation": {
+      "prediction": "UP",
+      "confidence": 0.5321,
+      "factors": [
+        {
+          "feature": "close",
+          "label": "Current Price",
+          "shap_value": 0.1044,
+          "feature_value": 255.92,
+          "direction": "positive"
+        },
+        {
+          "feature": "volume",
+          "label": "Trading Volume",
+          "shap_value": 0.0697,
+          "feature_value": 31264600.0,
+          "direction": "positive"
+        },
+        {
+          "feature": "ma_10",
+          "label": "10-Day Moving Avg",
+          "shap_value": -0.0475,
+          "feature_value": 251.74,
+          "direction": "negative"
+        },
+        {
+          "feature": "volatility_7",
+          "label": "7-Day Volatility",
+          "shap_value": -0.0309,
+          "feature_value": 3.4462,
+          "direction": "negative"
+        },
+        {
+          "feature": "momentum_5",
+          "label": "5-Day Momentum",
+          "shap_value": -0.0283,
+          "feature_value": 3.03,
+          "direction": "negative"
+        }
+      ],
+      "use_sentiment": false
+    },
+    "plain_english": "Prediction: \u2191 Price UP (Confidence: 53.2%)\n\nMain drivers:\n  1. Current Price = 255.92  \u2192  pushed prediction UP (+0.1044)\n  2. Trading Volume = 31264600.00  \u2192  pushed prediction UP (+0.0697)\n  3. 10-Day Moving Avg = 251.74  \u2192  pushed prediction DOWN (-0.0475)"
+  },
+  "with_sentiment": {
+    "ticker": "AAPL",
+    "global_importance": {
+      "sentiment_lag1": 0.10881280899047852,
+      "ma_10": 0.08554714918136597,
+      "volatility_7": 0.08407012373209,
+      "volume": 0.08051447570323944,
+      "momentum_5": 0.06715609133243561,
+      "ma_20": 0.05275862291455269,
+      "price_lag1": 0.04855501651763916,
+      "close": 0.04557789862155914,
+      "ma_5": 0.03891805186867714,
+      "price_lag2": 0.03836706653237343
+    },
+    "latest_explanation": {
+      "prediction": "UP",
+      "confidence": 0.5157,
+      "factors": [
+        {
+          "feature": "close",
+          "label": "Current Price",
+          "shap_value": 0.0892,
+          "feature_value": 255.92,
+          "direction": "positive"
+        },
+        {
+          "feature": "ma_10",
+          "label": "10-Day Moving Avg",
+          "shap_value": -0.065,
+          "feature_value": 251.74,
+          "direction": "negative"
+        },
+        {
+          "feature": "momentum_5",
+          "label": "5-Day Momentum",
+          "shap_value": -0.0602,
+          "feature_value": 3.03,
+          "direction": "negative"
+        },
+        {
+          "feature": "volume",
+          "label": "Trading Volume",
+          "shap_value": 0.0553,
+          "feature_value": 31264600.0,
+          "direction": "positive"
+        },
+        {
+          "feature": "ma_20",
+          "label": "20-Day Moving Avg",
+          "shap_value": 0.0523,
+          "feature_value": 253.4105,
+          "direction": "positive"
+        }
+      ],
+      "use_sentiment": true
+    },
+    "plain_english": "Prediction: \u2191 Price UP (Confidence: 51.6%)\n\nMain drivers:\n  1. Current Price = 255.92  \u2192  pushed prediction UP (+0.0892)\n  2. 10-Day Moving Avg = 251.74  \u2192  pushed prediction DOWN (-0.0650)\n  3. 5-Day Momentum = 3.03  \u2192  pushed prediction DOWN (-0.0602)"
+  }
+}

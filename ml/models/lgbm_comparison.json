@@ -1,0 +1,200 @@
+{
+  "AAPL_no_sent": {
+    "xgb_acc": 0.45454545454545453,
+    "lgb_acc": 0.4444444444444444,
+    "xgb_f1": 0.5645161290322581,
+    "lgb_f1": 0.5132743362831859,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/AAPL_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/AAPL_no_sentiment.pkl"
+  },
+  "AAPL_with_sent": {
+    "xgb_acc": 0.494949494949495,
+    "lgb_acc": 0.5151515151515151,
+    "xgb_f1": 0.5967741935483871,
+    "lgb_f1": 0.625,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/AAPL_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/AAPL_with_sentiment.pkl"
+  },
+  "AMD_no_sent": {
+    "xgb_acc": 0.45454545454545453,
+    "lgb_acc": 0.46464646464646464,
+    "xgb_f1": 0.4489795918367347,
+    "lgb_f1": 0.4854368932038835,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/AMD_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/AMD_no_sentiment.pkl"
+  },
+  "AMD_with_sent": {
+    "xgb_acc": 0.48484848484848486,
+    "lgb_acc": 0.4444444444444444,
+    "xgb_f1": 0.48484848484848486,
+    "lgb_f1": 0.46601941747572817,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/AMD_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/AMD_with_sentiment.pkl"
+  },
+  "AMZN_no_sent": {
+    "xgb_acc": 0.5555555555555556,
+    "lgb_acc": 0.494949494949495,
+    "xgb_f1": 0.47619047619047616,
+    "lgb_f1": 0.21875,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/AMZN_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/AMZN_no_sentiment.pkl"
+  },
+  "AMZN_with_sent": {
+    "xgb_acc": 0.46464646464646464,
+    "lgb_acc": 0.5555555555555556,
+    "xgb_f1": 0.345679012345679,
+    "lgb_f1": 0.5769230769230769,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/AMZN_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/AMZN_with_sentiment.pkl"
+  },
+  "BABA_no_sent": {
+    "xgb_acc": 0.5454545454545454,
+    "lgb_acc": 0.5151515151515151,
+    "xgb_f1": 0.43037974683544306,
+    "lgb_f1": 0.4666666666666667,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/BABA_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/BABA_no_sentiment.pkl"
+  },
+  "BABA_with_sent": {
+    "xgb_acc": 0.5050505050505051,
+    "lgb_acc": 0.5252525252525253,
+    "xgb_f1": 0.36363636363636365,
+    "lgb_f1": 0.47191011235955055,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/BABA_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/BABA_with_sentiment.pkl"
+  },
+  "GOOGL_no_sent": {
+    "xgb_acc": 0.494949494949495,
+    "lgb_acc": 0.47474747474747475,
+    "xgb_f1": 0.5535714285714286,
+    "lgb_f1": 0.59375,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/GOOGL_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/GOOGL_no_sentiment.pkl"
+  },
+  "GOOGL_with_sent": {
+    "xgb_acc": 0.494949494949495,
+    "lgb_acc": 0.494949494949495,
+    "xgb_f1": 0.5689655172413793,
+    "lgb_f1": 0.5901639344262295,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/GOOGL_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/GOOGL_with_sentiment.pkl"
+  },
+  "META_no_sent": {
+    "xgb_acc": 0.48484848484848486,
+    "lgb_acc": 0.48484848484848486,
+    "xgb_f1": 0.4742268041237113,
+    "lgb_f1": 0.5486725663716814,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/META_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/META_no_sentiment.pkl"
+  },
+  "META_with_sent": {
+    "xgb_acc": 0.45454545454545453,
+    "lgb_acc": 0.47474747474747475,
+    "xgb_f1": 0.4,
+    "lgb_f1": 0.4090909090909091,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/META_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/META_with_sentiment.pkl"
+  },
+  "MSFT_no_sent": {
+    "xgb_acc": 0.46464646464646464,
+    "lgb_acc": 0.5151515151515151,
+    "xgb_f1": 0.5137614678899083,
+    "lgb_f1": 0.5384615384615384,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/MSFT_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/MSFT_no_sentiment.pkl"
+  },
+  "MSFT_with_sent": {
+    "xgb_acc": 0.494949494949495,
+    "lgb_acc": 0.47474747474747475,
+    "xgb_f1": 0.5614035087719298,
+    "lgb_f1": 0.5094339622641509,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/MSFT_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/MSFT_with_sentiment.pkl"
+  },
+  "NFLX_no_sent": {
+    "xgb_acc": 0.43434343434343436,
+    "lgb_acc": 0.3939393939393939,
+    "xgb_f1": 0.36363636363636365,
+    "lgb_f1": 0.4,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/NFLX_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/NFLX_no_sentiment.pkl"
+  },
+  "NFLX_with_sent": {
+    "xgb_acc": 0.4444444444444444,
+    "lgb_acc": 0.5151515151515151,
+    "xgb_f1": 0.40860215053763443,
+    "lgb_f1": 0.4666666666666667,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/NFLX_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/NFLX_with_sentiment.pkl"
+  },
+  "NVDA_no_sent": {
+    "xgb_acc": 0.5656565656565656,
+    "lgb_acc": 0.5454545454545454,
+    "xgb_f1": 0.5473684210526316,
+    "lgb_f1": 0.5360824742268041,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/NVDA_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/NVDA_no_sentiment.pkl"
+  },
+  "NVDA_with_sent": {
+    "xgb_acc": 0.45454545454545453,
+    "lgb_acc": 0.5454545454545454,
+    "xgb_f1": 0.34146341463414637,
+    "lgb_f1": 0.47058823529411764,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/NVDA_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/NVDA_with_sentiment.pkl"
+  },
+  "TSLA_no_sent": {
+    "xgb_acc": 0.5353535353535354,
+    "lgb_acc": 0.4444444444444444,
+    "xgb_f1": 0.5208333333333334,
+    "lgb_f1": 0.3373493975903614,
+    "winner": "XGB",
+    "lgbm_path": "ml/models/TSLA_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/TSLA_no_sentiment.pkl"
+  },
+  "TSLA_with_sent": {
+    "xgb_acc": 0.4444444444444444,
+    "lgb_acc": 0.45454545454545453,
+    "xgb_f1": 0.48598130841121495,
+    "lgb_f1": 0.34146341463414637,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/TSLA_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/TSLA_with_sentiment.pkl"
+  },
+  "global_no_sent": {
+    "xgb_acc": 0.49595959595959593,
+    "lgb_acc": 0.5111111111111111,
+    "xgb_f1": 0.5112634671890304,
+    "lgb_f1": 0.5476635514018692,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/model_no_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/model_no_sentiment.pkl"
+  },
+  "global_with_sent": {
+    "xgb_acc": 0.5070707070707071,
+    "lgb_acc": 0.5393939393939394,
+    "xgb_f1": 0.5378787878787878,
+    "lgb_f1": 0.569811320754717,
+    "winner": "LGB",
+    "lgbm_path": "ml/models/model_with_sentiment_lgbm.pkl",
+    "xgb_path": "ml/models/model_with_sentiment.pkl"
+  }
+}
