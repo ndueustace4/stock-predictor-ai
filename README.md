@@ -1,23 +1,82 @@
-# Stock Predictor AI
+Stock Predictor AI
 
-This repository contains the stock prediction project source: a React dashboard,
-a FastAPI backend, PostgreSQL data pipeline, model training and inference code,
-and scheduled collection scripts.
+An explainable stock prediction platform. It combines price indicators with news sentiment to forecast stock movements, and shows the reasons behind every prediction.
 
-## Branches
+Demo: stock-predictor-ai-kappa.vercel.app (a static preview built from a dated snapshot, see Live preview vs full application)
 
-- `main` contains the full application source.
-- `portfolio-preview` contains the static dashboard preview for portfolio
-  hosting. It uses a dated snapshot and does not provide live predictions,
-  scheduled data collection, or retraining.
+Dashboard
 
-## Important runtime files
+Features
+Forecasts for 10 tickers across four horizons (1 day, 1 week, 1 month and 1 year), powered by 80 trained models
+20+ engineered features, including technical indicators (RSI, MACD, Bollinger Bands) and news sentiment
+Two sentiment pipelines, using news from Alpha Vantage, GNews and the FNSPID dataset
+SHAP explanations that show which inputs drove each forecast
+React dashboard, FastAPI backend and PostgreSQL storage
+Scheduled data collection and model retraining scripts
+Tech stack
+Layer	Technology
+Frontend	React
+Backend	Python, FastAPI
+Database	PostgreSQL (Neon)
+Machine learning	Python, SHAP explainability
+Hosting	Vercel (dashboard)
+How it works
+Price and news sources
+        |
+   data_pipeline  -->  PostgreSQL
+                          |
+        ml (features, training, SHAP explanations)
+                          |
+                  FastAPI backend
+                          |
+                  React dashboard
+Project structure
+api/            FastAPI backend and prediction endpoints
+config/         Application configuration
+data_pipeline/  Price and news collection and processing
+database/       Database models and schema
+frontend/       React dashboard
+ml/             Feature engineering, model training and inference
+scripts/        Helper and maintenance scripts
+tests/          Automated tests
+scheduler.py    Scheduled data collection
+requirements.txt  Python dependencies
+Branches
+main contains the full application source.
+portfolio-preview contains the static dashboard preview used for portfolio hosting. It uses a dated snapshot and does not provide live predictions, scheduled data collection or retraining.
+Live preview vs full application
 
-The repository intentionally does not include `.env` credentials or trained
-model binaries. Configure database and service credentials through environment
-variables, and provide the model artifacts separately when running the live
-API. The static portfolio preview does not need database credentials or model
-files after its snapshot has been generated.
+The demo link above is the static preview. It shows the dashboard and a snapshot of predictions, but it is not connected to a running API, so it does not update or generate new forecasts.
 
-Do not commit `.env` files, database connection strings, API keys, or private
-model/data artifacts.
+Running the full application needs three things that are intentionally not stored in this repository:
+
+A PostgreSQL database
+Credentials for the news and data services, set as environment variables
+The trained model files, provided separately
+Run locally
+
+Requirements: Python 3, Node.js and a PostgreSQL database.
+
+bash
+git clone https://github.com/ndueustace4/stock-predictor-ai.git
+cd stock-predictor-ai
+
+# Backend
+python -m venv venv
+venv\Scripts\activate        # Windows (use: source venv/bin/activate on macOS or Linux)
+pip install -r requirements.txt
+Create a .env file with your database connection string and API keys. The exact variable names are read in config/. Never commit this file.
+Place the trained model files where the configuration expects them.
+Start the FastAPI app from api/ with uvicorn.
+For the dashboard, open the frontend/ folder, run npm install, then use the scripts listed in frontend/package.json.
+Security
+
+Do not commit .env files, database connection strings, API keys, or private model and data artifacts. The repository ignores these by default.
+
+Disclaimer
+
+This is an educational and portfolio project. Its predictions are not financial advice and should not be used to make investment decisions.
+
+Author
+
+Chimaobi Eustace Ndu · GitHub · LinkedIn
