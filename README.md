@@ -3,7 +3,8 @@
 An explainable stock prediction platform. It combines price indicators with news sentiment to forecast stock movements, and shows the reasons behind every prediction.
 
 **Demo:** [stock-predictor-ai-kappa.vercel.app](https://stock-predictor-ai-kappa.vercel.app/) (a static preview built from a dated snapshot)
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ff7898e3-0358-4eb3-ab87-c4caacc87dda" />
+<img width="1912" height="919" alt="image" src="https://github.com/user-attachments/assets/3aad7795-c392-4298-8598-3e005138f272" />
+
 
 
 ## Features
